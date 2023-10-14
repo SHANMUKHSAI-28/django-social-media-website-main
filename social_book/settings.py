@@ -76,10 +76,14 @@ WSGI_APPLICATION = 'social_book.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',  # Use 'django.db.backends.postgresql', 'django.db.backends.mysql', or 'django.db.backends.oracle' for other database backends.
-        'NAME': BASE_DIR / 'db.sqlite3',  # Database file location for SQLite. For other databases, provide the database name.
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.postgresql',
+       'NAME': 'connectify',  #database name
+       'USER': 'postgres',
+       'PASSWORD': 'admin',
+       'HOST': 'localhost',
+       'PORT': '5432',
+   }
 }
 
 
